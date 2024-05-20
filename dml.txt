@@ -1,0 +1,32 @@
+-- Insert data into the PRODUCT table
+
+
+INSERT INTO PRODUCT     (ProductID,     ProductName,            Category,       Price)
+VALUE                   (PO1,           'Samsung Galaxy S20',     Smartphone,     3299)
+
+
+INSERT INTO PRODUCT     (ProductID,     ProductName,            Category,       Price)
+VALUE                   (PO2,           'ASUS Notebook',            PC,         4599)
+
+
+-- Insert data into the CUSTOMER table
+
+
+INSERT INTO CUSTOMER    (CustomerID,    CustomerName,       CustomerTel)
+VALUES                  (CO1,           'Ali',               71321009)
+
+
+INSERT INTO CUSTOMER    (CustomerID,    CustomerName,       CustomerTel)
+VALUES                  (CO2,           'Asma',               77345822)
+
+
+
+
+-- Insert data into the ORDERS table
+
+INSERT INTO ORDERS (Customer_ID, Product_ID, OrderDate,  Quantity, Total_amount)
+VALUES              (CO1,           PO2,        NULL,       2,         9198)
+
+
+INSERT INTO ORDERS (Customer_ID, Product_ID,    OrderDate,      Quantity,  Total_amount)
+VALUES              (CO2,           PO1,        28/05/2020,       1,         3299)
